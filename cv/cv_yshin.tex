@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+%----------------------------------------------------------------------------------------
+%	USER DEFINED COMMANDS
+%----------------------------------------------------------------------------------------
+\newcommand{\floor}[1]{ \left\lfloor {#1} \right\rfloor}
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Yongho Shin} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+\moveleft.5\hoffset\centerline{Dept.\@ of Computer Science, Yonsei University} % Your address
+\moveleft.5\hoffset\centerline{50 Yonsei-ro, Seodaemun-gu}
+\moveleft.5\hoffset\centerline{Seoul 03722, South Korea}
+\moveleft.5\hoffset\centerline{Email: \texttt{yshin@yonsei.ac.kr}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{CURRENT \\ POSITION}
+\section{Current \\ Position}
+Graduate student, Yonsei University, South Korea \hfill Mar 2018 - present
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item[] Advisor: Hyung-Chan An
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{EDUCATION}
+\section{Education}
+B.S. in Computer Science, Yonsei University, South Korea \hfill Feb 2018
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item[] Awarded \textsl{high honors at graduation}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\section{RESEARCH \\ INTERESTS}
+\section{Research \\ Interests}
+Combinatorial optimization\\
+Approximation algorithms\\
+Online algorithms and competitive analysis\\
+Theoretical computer science
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH PAPERS
+%----------------------------------------------------------------------------------------
+
+%\section{RESEARCH \\ PAPERS}
+\section{Research \\ Papers}
+K. Kim, Y. Shin, and H.-C. An. Constant-factor approximation algorithms for parity-constrained facility location and $k$-center. \emph{Algorithmica}, 2022.
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item[] K. Kim, Y. Shin, and H.-C. An. Constant-factor approximation algorithms for the parity-constrained facility location problem. In \emph{ISAAC 2020: Proceedings of the 31st International Symposium on Algorithms and Computation}, pages 21:1-21:17, 2020.
+%\item[] \emph{Facility location} is a prominent optimization problem in combinatorial optimization, and has been investigated under various settings. However, little is known on how the problem behaves in conjunction with parity constraints. This shortfall of understanding was rather disturbing when we consider the central role of \emph{parity} in the field of combinatorics. In this paper, we present the first constant-factor approximation algorithm for the facility location problem with parity constraints.
+\end{itemize}
+
+Y. Shin and H.-C. An. Making three out of two: three-way online correlated selection. In \emph{ISAAC 2021: Proceedings of the 32nd International Symposium on Algorithms and Computation}, pages 49:1-49:17, 2021.
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%\item[] \emph{Two-way online correlated selection (two-way OCS)} is an online algorithm that, at each timestep, takes a pair of elements from the ground set and irrevocably chooses one of the two elements, while ensuring negative correlation in the algorithm's choices. Whilst OCS was initially invented by Fahrbach, Huang, Tao, and Zadimoghaddam to tackle the edge-weighted online bipartite matching problem, it is an interesting technique on its own due to its capability of introducing a powerful algorithmic tool, namely negative correlation, to online algorithms. As such, Fahrbach et al. posed two tantalizing open questions in their paper, one of which was the following: Can we obtain a nontrivial \emph{$n$-way OCS} for $n>2$, in which the algorithm can be given $n>2$ elements to choose from at each timestep? In this paper, we affirmatively answer this open question by presenting a \emph{three-way OCS}. We also present our OCS yields a 0.5093-competitive algorithm for the edge-weighted online matching, demonstrating its usefulness.
+%\end{itemize}
+
+Y. Shin, K. Kim, S. Lee, and H.-C. An. Online graph matching problem with a worst-case reassignment budget. \emph{arXiv preprint arXiv:2003.05175}, 2020.
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%\item[] We consider the online bipartite matching problem where reassignments are allowed. Bernstein, Holm, and Rotenberg showed that an online algorithm can maintain a matching of maximum cardinality by performing \emph{amortized} $O(\log^2 n)$ reassignments per arrival. We propose to consider the general question of \emph{how requiring a \emph{non-amortized} hard budget on the number of reassignments affects the algorithms' performances} under various models. Through a simple algorithm exploiting a shortest augmenting path of length within the given budget, we demonstrate that even a small hard budget can yield significant performance advantage, compared to those algorithms that do not perform reassignments. Moreover, we further show that this algorithm is a best-possible deterministic algorithm for all those models.
+%\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{AWARDS}
+\section{Awards}
+\textsl{High honors at graduation}, Yonsei University \hfill Feb 2018
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+%\section{EXPERIENCE}
+\section{Experience}
+\textsl{Visiting research intern}, Cornell University \hfill Sep 2022 - Dec 2022
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item[] Host: David B. Shmoys
+\end{itemize}
+
+\textsl{Teaching assistant}, Yonsei University
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item[] CSI 2103 (Data structures) \hfill Spring 2018-2021
+\item[] CSI 3108 (Algorithm analysis) \hfill Fall 2018-2021
+\end{itemize}
+
+\textsl{Research intern}, Yonsei University \hfill Jan 2017 - Feb 2018
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item[] Advisor: Hyung-Chan An
+\end{itemize}
+
+\textsl{Programmer}, Republic of Korea Air Force \hfill Nov 2013 - Aug 2015
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}
