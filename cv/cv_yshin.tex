@@ -1,123 +1,70 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Graduate Curriculum Vitae
-% LaTeX Template
-% Version 1.1 (9/12/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
-%
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
-
-\usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
-
-\setlength{\textwidth}{5.1in} % Text width of the document
-
-%----------------------------------------------------------------------------------------
-%	USER DEFINED COMMANDS
-%----------------------------------------------------------------------------------------
-\newcommand{\floor}[1]{ \left\lfloor {#1} \right\rfloor}
-
-
+\documentclass{cv}
 \begin{document}
-
 %----------------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
+%	RESEARCH INTERESTS
 %----------------------------------------------------------------------------------------
-
-\moveleft.5\hoffset\centerline{\large\bf Yongho Shin} % Your name at the top
- 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
- 
-\moveleft.5\hoffset\centerline{Dept.\@ of Computer Science, Yonsei University} % Your address
-\moveleft.5\hoffset\centerline{50 Yonsei-ro, Seodaemun-gu}
-\moveleft.5\hoffset\centerline{Seoul 03722, South Korea}
-\moveleft.5\hoffset\centerline{Email: \texttt{yshin@yonsei.ac.kr}}
-
-%----------------------------------------------------------------------------------------
-
-\begin{resume}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-%\section{CURRENT \\ POSITION}
-%\section{Current \\ Position}
-%Graduate student, Yonsei University, South Korea \hfill Mar 2018 - present
-%\begin{itemize} \itemsep -2pt % Reduce space between items
-%\item[] Advisor: Hyung-Chan An
-%\item[] Expected to graduate in Aug, 2024
-%\end{itemize}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-%\section{EDUCATION}
-\section{Education}
-Ph.D. in Computer Science, Yonsei University, South Korea \hfill Expected Aug 2024
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item[-] Dissertation topic: Competitive algorithms for online algorithms with hard requirements relaxed
-\item[-] Advisor: Hyung-Chan An
-\end{itemize}
-
-B.S. in Computer Science, Yonsei University, South Korea \hfill Feb 2018
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item[-] Awarded \textsl{high honors at graduation}
-\end{itemize}
+\centerline{\Huge{Yongho Shin}}
+\vspace{1em}
+\centerline{50 Yonsei-ro, Seodaemun-gu}
+\centerline{Seoul 03722, South Korea}
+\centerline{Email: \texttt{yshin@yonsei.ac.kr}}
 
 %----------------------------------------------------------------------------------------
 %	RESEARCH INTERESTS
 %----------------------------------------------------------------------------------------
+\section{Research Interests}
+Online/approximation algorithms for combinatorial optimization problems
 
-%\section{RESEARCH \\ INTERESTS}
-\section{Research \\ Interests}
-Combinatorial optimization\\
-Approximation algorithms\\
-Online algorithms and competitive analysis\\
-Learning-augmented algorithms\\
-Theoretical computer science
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\textbf{Ph.D. in Computer Science, Yonsei University} \hfill Expected Aug 2024
+\vspace{\killinitspace}
+\begin{itemize}
+\item Dissertation topic: Relaxing hard contraints for online optimization
+\item Advisor: Hyung-Chan An
+\end{itemize}
+
+\textbf{B.S. in Computer Science, Yonsei University} \hfill Feb 2018
+\vspace{\killinitspace}
+\begin{itemize}
+\item Awarded \textsl{high honors at graduation}
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	RESEARCH PAPERS
 %----------------------------------------------------------------------------------------
-
-%\section{RESEARCH \\ PAPERS}
-\section{Research \\ Papers}
-Y. Shin, C. Lee, and H.-C. An. On optimal consistency-robustness trade-off for learning-augmented multi-option ski rental. \emph{arXiv preprint arXiv:2312.02547}, 2023.
-
-Y. Shin, C. Lee, G. Lee, and H.-C. An. Improved learning-augmented algorithms for the multi-option ski rental problem via best-possible competitive analysis. In \emph{ICML 2023: Proceedings of the 40th International Conference on Machine Learning}, PMLR 202, pages 31539-31561, 2023.
-
-K. Kim, Y. Shin, and H.-C. An. Constant-factor approximation algorithms for parity-constrained facility location and $k$-center. \emph{Algorithmica 85}, pages 1883–1911, 2023.
-\begin{itemize} \itemsep -2pt % Reduce space between items
-%\item[-]  The preliminary paper titled ``Constant-factor approximation algorithms for the parity-constrained facility location problem'' appeared in \emph{ISAAC 2020: Proceedings of the 31st International Symposium on Algorithms and Computation}, pages 21:1-21:17, 2020.
-\item[-]  The preliminary version has appeared in \emph{ISAAC 2020: Proceedings of the 31st International Symposium on Algorithms and Computation}, pages 21:1-21:17, 2020.
-\item[-] \emph{Facility location} is a prominent optimization problem in combinatorial optimization, and has been investigated under various settings. However, little is known on how the problem behaves in conjunction with parity constraints. This shortfall of understanding was rather disturbing when we consider the central role of \emph{parity} in the field of combinatorics. In this paper, we present the first constant-factor approximation algorithm for the facility location problem with parity constraints.
+\section{Research Papers}
+Yongho Shin, Changyeol Lee, and Hyung-Chan An. On optimal consistency-robustness trade-off for learning-augmented multi-option ski rental. \emph{arXiv preprint arXiv:2312.02547}, 2023.
+\vspace{\killinitspace}
+\begin{itemize}
+\item This paper bridges this gap for both deterministic and randomized learning-augmented algorithms for the multi-option ski rental problem. For deterministic algorithms, we present a best-possible algorithm that completely matches the known lower bound. For randomized algorithms, we show the first nontrivial lower bound on the consistency-robustness trade-off, and also present an improved randomized algorithm. Our algorithm matches our lower bound on robustness within a factor of e/2 when the consistency is at most 1.086.
 \end{itemize}
 
-Y. Shin and H.-C. An. Making three out of two: three-way online correlated selection. In \emph{ISAAC 2021: Proceedings of the 32nd International Symposium on Algorithms and Computation}, pages 49:1-49:17, 2021.
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item[-] \emph{Two-way online correlated selection (two-way OCS)} is an online algorithm that, at each timestep, takes a pair of elements from the ground set and irrevocably chooses one of the two elements, while ensuring negative correlation in the algorithm's choices. Whilst OCS was initially invented by Fahrbach, Huang, Tao, and Zadimoghaddam to tackle the edge-weighted online bipartite matching problem, it is an interesting technique on its own due to its capability of introducing a powerful algorithmic tool, namely negative correlation, to online algorithms. As such, Fahrbach et al. posed two tantalizing open questions in their paper, one of which was the following: Can we obtain a nontrivial \emph{$n$-way OCS} for $n>2$, in which the algorithm can be given $n>2$ elements to choose from at each timestep? In this paper, we affirmatively answer this open question by presenting a \emph{three-way OCS}. We also present our OCS yields a 0.5093-competitive algorithm for the edge-weighted online matching, demonstrating its usefulness.
+Yongho Shin, Changyeol Lee, Gukryeol Lee, and Hyung-Chan An. Improved learning-augmented algorithms for the multi-option ski rental problem via best-possible competitive analysis. In \emph{ICML 2023: Proceedings of the 40th International Conference on Machine Learning}, PMLR 202, pages 31539-31561, 2023.
+\vspace{\killinitspace}
+\begin{itemize}
+\item We present improved learning-augmented algorithms for the multi-option ski rental problem. Even though ski rental problems are one of the canonical problems in the field of online optimization, only deterministic algorithms were previously known for multi-option ski rental, with or without learning augmentation. We present the first randomized learning-augmented algorithm for this problem, surpassing previous performance guarantees given by deterministic algorithms. Our learning-augmented algorithm is based on a new, provably best-possible randomized competitive algorithm for the problem. Our results are further complemented by lower bounds for deterministic and randomized algorithms, and computational experiments evaluating our algorithms’ performance improvements.
 \end{itemize}
 
-Y. Shin, K. Kim, S. Lee, and H.-C. An. Online graph matching problem with a worst-case reassignment budget. \emph{arXiv preprint arXiv:2003.05175}, 2020.
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item[-] We consider the online bipartite matching problem where reassignments are allowed. Bernstein, Holm, and Rotenberg showed that an online algorithm can maintain a matching of maximum cardinality by performing \emph{amortized} $O(\log^2 n)$ reassignments per arrival. We propose to consider the general question of \emph{how requiring a \emph{non-amortized} hard budget on the number of reassignments affects the algorithms' performances} under various models. Through a simple algorithm exploiting a shortest augmenting path of length within the given budget, we demonstrate that even a small hard budget can yield significant performance advantage, compared to those algorithms that do not perform reassignments. Moreover, we further show that this algorithm is a best-possible deterministic algorithm for all those models.
+Kangsan Kim, Yongho Shin, and Hyung-Chan An. Constant-factor approximation algorithms for parity-constrained facility location and $k$-center. \emph{Algorithmica 85}, pages 1883–1911, 2023.
+\vspace{\killinitspace}
+\begin{itemize}
+\item Preliminary version appeared in \emph{ISAAC 2020: Proceedings of the 31st International Symposium on Algorithms and Computation}, pages 21:1-21:17, 2020.
+\item \emph{Facility location} is a prominent optimization problem in combinatorial optimization, and has been investigated under various settings. However, little is known on how the problem behaves in conjunction with parity constraints. This shortfall of understanding was rather disturbing when we consider the central role of \emph{parity} in the field of combinatorics. In this paper, we present the first constant-factor approximation algorithm for the facility location problem with parity constraints.
+\end{itemize}
+
+Yongho Shin and Hyung-Chan An. Making three out of two: Three-way online correlated selection. In \emph{ISAAC 2021: Proceedings of the 32nd International Symposium on Algorithms and Computation}, pages 49:1-49:17, 2021.
+\vspace{\killinitspace}
+\begin{itemize}
+\item \emph{Two-way online correlated selection (two-way OCS)} is an online algorithm that, at each timestep, takes a pair of elements from the ground set and irrevocably chooses one of the two elements, while ensuring negative correlation in the algorithm's choices. Whilst OCS was initially invented by Fahrbach, Huang, Tao, and Zadimoghaddam to tackle the edge-weighted online bipartite matching problem, it is an interesting technique on its own due to its capability of introducing a powerful algorithmic tool, namely negative correlation, to online algorithms. As such, Fahrbach et al.~posed two tantalizing open questions in their paper, one of which was the following: Can we obtain a nontrivial \emph{$n$-way OCS} for $n>2$, in which the algorithm can be given $n>2$ elements to choose from at each timestep? In this paper, we affirmatively answer this open question by presenting a \emph{three-way OCS}. We also present our OCS yields a 0.5093-competitive algorithm for the edge-weighted online matching, demonstrating its usefulness.
+\end{itemize}
+
+Yongho Shin, Kangsan Kim, Seungmin Lee, and Hyung-Chan An. Online graph matching problem with a worst-case reassignment budget. \emph{arXiv preprint arXiv:2003.05175}, 2020.
+\vspace{\killinitspace}
+\begin{itemize}
+\item We consider the online bipartite matching problem where reassignments are allowed. Bernstein, Holm, and Rotenberg showed that an online algorithm can maintain a matching of maximum cardinality by performing \emph{amortized} $O(\log^2 n)$ reassignments per arrival. We propose to consider the general question of \emph{how requiring a \emph{non-amortized} hard budget on the number of reassignments affects the algorithms' performances} under various models. Through a simple algorithm exploiting a shortest augmenting path of length within the given budget, we demonstrate that even a small hard budget can yield significant performance advantage, compared to those algorithms that do not perform reassignments. Moreover, we further show that this algorithm is a best-possible deterministic algorithm for all those models.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -129,16 +76,41 @@ Y. Shin, K. Kim, S. Lee, and H.-C. An. Online graph matching problem with a wors
 \textsl{High honors at graduation}, Yonsei University \hfill Feb 2018
 
 %----------------------------------------------------------------------------------------
+%	Presentations
+%----------------------------------------------------------------------------------------
+\section{Presentations}
+\textsl{Learning-augmented multi-option ski rental}
+\vspace{\killinitspace}
+\begin{itemize}
+\item The 40th International Conference on Machine Learning \hfill Jul 2023
+\end{itemize}
+
+\textsl{Three-way online correlated selection}
+\vspace{\killinitspace}
+\begin{itemize}
+\item The 32nd International Symposium on Algorithms and Computation \hfill Dec 2021
+\item The 14th Annual Meeting of the Asian Association for Algorithms and Computation \hfill Oct 2021
+\end{itemize}
+
+\textsl{Parity-constrained facility location}
+\vspace{\killinitspace}
+\begin{itemize}
+\item The 31st International Symposium on Algorithms and Computation \hfill Dec 2020
+\item The 13th Annual Meeting of the Asian Association for Algorithms and Computation \hfill Oct 2020
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
 %	TEACHING
 %----------------------------------------------------------------------------------------
 \section{Teaching}
 \textsl{Teaching assistant}, Yonsei University
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item[] CSI3108 (Algorithm analysis) \hfill Fall 2018-2021, 2023
-\item[] AIC2130 (Computer algorithms for AI applications) \hfill Fall 2023
-\item[] GEK6205 (Design and analysis of optimization algorithms) \hfill Fall 2023
-\item[] CCO2103 (Data structures) \hfill Spring 2023
-\item[] CSI2103 (Data structures) \hfill Spring 2018-2021
+\vspace{\killinitspace}
+\begin{itemize}
+\item CSI3108 (Algorithm analysis) \hfill Fall 2018 -- 2021, 2023
+\item AIC2130 (Computer algorithms for AI applications) \hfill Fall 2023
+\item GEK6205 (Design and analysis of optimization algorithms) \hfill Fall 2023
+\item CCO2103 (Data structures) \hfill Spring 2023
+\item CSI2103 (Data structures) \hfill Spring 2018-2021
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
@@ -146,21 +118,19 @@ Y. Shin, K. Kim, S. Lee, and H.-C. An. Online graph matching problem with a wors
 %----------------------------------------------------------------------------------------
 %\section{EXPERIENCE}
 \section{Experience}
-\textsl{Visiting research intern}, Cornell University \hfill Sep 2022 - Dec 2022
-\begin{itemize} \itemsep -2pt % Reduce space between items
+\textsl{Visiting research intern}, Cornell University \hfill Sep 2022 -- Dec 2022
+\vspace{\killinitspace}
+\begin{itemize}
 \item[] Host: David B. Shmoys
 \end{itemize}
 
-\textsl{Research intern}, Yonsei University \hfill Jan 2017 - Feb 2018
-\begin{itemize} \itemsep -2pt % Reduce space between items
+\textsl{Research intern}, Yonsei University \hfill Jan 2017 -- Feb 2018
+\vspace{\killinitspace}
+\begin{itemize}
 \item[] Advisor: Hyung-Chan An
 \end{itemize}
 
-\textsl{Programmer}, Republic of Korea Air Force \hfill Nov 2013 - Aug 2015
+\textsl{Programmer}, Republic of Korea Air Force \hfill Nov 2013 -- Aug 2015
 
 
-
-%----------------------------------------------------------------------------------------
-
-\end{resume}
 \end{document}
