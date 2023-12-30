@@ -8,10 +8,10 @@
 \newcommand{\killinitspace}{-1em}
 
 \RequirePackage{geometry}
-\geometry{a4paper, margin=1in}
+\geometry{a4paper, margin={0.75in, 1in}}
 
 \RequirePackage{enumitem}
-\setitemize{itemsep=0em, topsep=0em, leftmargin=1.5em, label=-}
+\setitemize{itemsep=0em, topsep=0em, leftmargin=1.5em, label=$\diamond$}
 
 \RequirePackage{titlesec}
 \titleformat{\section}       % Customise the \section command 
