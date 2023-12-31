@@ -1,10 +1,31 @@
-\documentclass{cv}
+\documentclass{article}
+%----------------------------------------------------------------------------------------
+%	Param setting
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1em}
+\setlength{\itemsep}{0.5em}
+\newcommand{\killinitspace}{-0.7em}
+
+\usepackage{geometry}
+\geometry{a4paper, margin={0.75in, 1in}}
+
+\usepackage{enumitem}
+\setitemize{itemsep=0em, topsep=0em, leftmargin=1.5em, label=$\diamond$}
+
+\usepackage{titlesec}
+\titleformat{\section}       % Customise the \section command 
+  {\Large\scshape\raggedright} % Make the \section headers large (\Large),
+  {}{0em}
+  {}                 % Can be used to insert code before the heading
+  [\titlerule \vspace{-0.7em}]       % Inserts a horizontal line after the heading
+
 \begin{document}
 %----------------------------------------------------------------------------------------
-%	RESEARCH INTERESTS
+%	Personal info
 %----------------------------------------------------------------------------------------
 {\Huge Yongho Shin}
-\begin{itemize}[itemsep=-3pt, leftmargin=0pt, label=]
+\begin{itemize}[itemsep=-3pt, leftmargin=2.5pt, label=]
 \item 50 Yonsei-ro, Seodaemun-gu
 \item Seoul 03722, South Korea
 \item Email: \texttt{yshin@yonsei.ac.kr}
@@ -12,30 +33,30 @@
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	RESEARCH INTERESTS
+%	Research interests
 %----------------------------------------------------------------------------------------
 \section{Research Interests}
 Online/approximation algorithms for combinatorial optimization problems
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%	Education
 %----------------------------------------------------------------------------------------
 \section{Education}
-\textbf{Ph.D. in Computer Science, Yonsei University, South Korea} \hfill Mar 2018 -- Aug 2024 (expected)
+\textbf{Ph.D.~in Computer Science, Yonsei University, South Korea} \hfill Mar 2018 -- Aug 2024 (expected)
 \vspace{\killinitspace}
 \begin{itemize}
 \item Dissertation topic: Relaxing hard contraints for online optimization
 \item Advisor: Hyung-Chan An
 \end{itemize}
 
-\textbf{B.S. in Computer Science, Yonsei University, South Korea} \hfill Mar 2012 -- Feb 2018
+\textbf{B.S.~in Computer Science, Yonsei University, South Korea} \hfill Mar 2012 -- Feb 2018
 \vspace{\killinitspace}
 \begin{itemize}
 \item Awarded \textsl{high honors at graduation}
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	RESEARCH PAPERS
+%	Research papers
 %----------------------------------------------------------------------------------------
 \section{Research Papers}
 \textbf{Yongho Shin}, Changyeol Lee, and Hyung-Chan An. On optimal consistency-robustness trade-off for learning-augmented multi-option ski rental. \emph{arXiv preprint arXiv:2312.02547}, 2023.
@@ -44,33 +65,35 @@ Online/approximation algorithms for combinatorial optimization problems
 \item This paper bridges the gap for both deterministic and randomized learning-augmented algorithms for the multi-option ski rental problem. For deterministic algorithms, we present a best-possible algorithm that completely matches the known lower bound. For randomized algorithms, we show the first nontrivial lower bound on the consistency-robustness trade-off, and also present an improved randomized algorithm. Our algorithm matches our lower bound on robustness within a factor of e/2 when the consistency is at most 1.086.
 \end{itemize}
 
-\textbf{Yongho Shin}, Changyeol Lee, Gukryeol Lee, and Hyung-Chan An. Improved learning-augmented algorithms for the multi-option ski rental problem via best-possible competitive analysis. In \emph{ICML 2023: Proceedings of the 40th International Conference on Machine Learning}, PMLR 202, 31539-31561, 2023.
+\textbf{Yongho Shin}, Changyeol Lee, Gukryeol Lee, and Hyung-Chan An. Improved learning-augmented algorithms for the multi-option ski rental problem via best-possible competitive analysis. In \emph{Proceedings of the 40th International Conference on Machine Learning (ICML 2023)}, PMLR 202:31539-31561, 2023.
 \vspace{\killinitspace}
 \begin{itemize}
-\item In this paper, we present improved learning-augmented algorithms for the multi-option ski rental problem. Even though ski rental problems are one of the canonical problems in the field of online optimization, only deterministic algorithms were previously known for multi-option ski rental, with or without learning augmentation. We present the first randomized learning-augmented algorithm for this problem, surpassing previous performance guarantees given by deterministic algorithms. Our learning-augmented algorithm is based on a new, provably best-possible randomized competitive algorithm for the problem. Our results are further complemented by lower bounds for deterministic and randomized algorithms, and computational experiments evaluating our algorithms’ performance improvements.
+\item %In this paper, we present improved learning-augmented algorithms for the multi-option ski rental problem.
+Even though ski rental problems are one of the canonical problems in the field of online optimization, only deterministic algorithms were previously known for multi-option ski rental, with or without learning augmentation. We present the first randomized learning-augmented algorithm for this problem, surpassing previous performance guarantees given by deterministic algorithms. Our learning-augmented algorithm is based on a new, provably best-possible randomized competitive algorithm for the problem. Our results are further complemented by lower bounds for deterministic and randomized algorithms.
+%, and computational experiments evaluating our algorithms’ performance improvements.
 \end{itemize}
 
 Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximation algorithms for parity-constrained facility location and $k$-center. \emph{Algorithmica 85}, 1883–1911, 2023.
 \vspace{\killinitspace}
 \begin{itemize}
-\item Preliminary version appeared in \emph{ISAAC 2020: Proceedings of the 31st International Symposium on Algorithms and Computation}, 21:1-21:17, 2020.
+\item Preliminary version appeared in \emph{Proceedings of the 31st International Symposium on Algorithms and Computation (ISAAC 2020)}, 21:1-21:17, 2020.
 \item \emph{Facility location} is a prominent optimization problem in combinatorial optimization, and has been investigated under various settings. However, little is known on how the problem behaves in conjunction with parity constraints. This shortfall of understanding was rather disturbing when we consider the central role of \emph{parity} in the field of combinatorics. In this paper, we present the first constant-factor approximation algorithms for the facility location and $k$-center problems with parity constraints.
 \end{itemize}
 
-\textbf{Yongho Shin} and Hyung-Chan An. Making three out of two: Three-way online correlated selection. In \emph{ISAAC 2021: Proceedings of the 32nd International Symposium on Algorithms and Computation}, 49:1-49:17, 2021.
+\textbf{Yongho Shin} and Hyung-Chan An. Making three out of two: Three-way online correlated selection. In \emph{Proceedings of the 32nd International Symposium on Algorithms and Computation (ISAAC 2021)}, 49:1-49:17, 2021.
 \vspace{\killinitspace}
 \begin{itemize}
 \item \emph{Two-way online correlated selection (two-way OCS)} is an online algorithm that, at each timestep, takes a pair of elements from the ground set and irrevocably chooses one of the two elements, while ensuring negative correlation in the algorithm's choices. Whilst OCS was initially invented by Fahrbach, Huang, Tao, and Zadimoghaddam to tackle the edge-weighted online bipartite matching problem, it is an interesting technique on its own due to its capability of introducing a powerful algorithmic tool, namely negative correlation, to online algorithms. As such, Fahrbach et al.~posed two tantalizing open questions in their paper, one of which was the following: Can we obtain a nontrivial \emph{$n$-way OCS} for $n>2$, in which the algorithm can be given $n>2$ elements to choose from at each timestep? In this paper, we affirmatively answer this open question by presenting a \emph{three-way OCS}. We also present our OCS yields a 0.5093-competitive algorithm for the edge-weighted online matching, demonstrating its usefulness.
 \end{itemize}
 
-\textbf{Yongho Shin}, Kangsan Kim, Seungmin Lee, and Hyung-Chan An. Online graph matching problem with a worst-case reassignment budget. \emph{Submitted}. \emph{arXiv preprint arXiv:2003.05175}, 2020.
+\textbf{Yongho Shin}, Kangsan Kim, Seungmin Lee, and Hyung-Chan An. Online graph matching problem with a worst-case reassignment budget. \emph{arXiv preprint arXiv:2003.05175}, 2020.
 \vspace{\killinitspace}
 \begin{itemize}
 \item We consider the online bipartite matching problem where reassignments are allowed. Bernstein, Holm, and Rotenberg showed that an online algorithm can maintain a matching of maximum cardinality by performing \emph{amortized} $O(\log^2 n)$ reassignments per arrival. We propose to consider the general question of \emph{how requiring a \emph{non-amortized} hard budget on the number of reassignments affects the algorithms' performances} under various models. Through a simple algorithm exploiting a shortest augmenting path of length within the given budget, we demonstrate that even a small hard budget can yield significant performance advantage, compared to those algorithms that do not perform reassignments. Moreover, we further show that this algorithm is a best-possible deterministic algorithm for all those models.
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	AWARDS
+%	Awards
 %----------------------------------------------------------------------------------------
 
 %\section{AWARDS}
@@ -84,26 +107,32 @@ Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximat
 \textsl{Learning-augmented multi-option ski rental}
 \vspace{\killinitspace}
 \begin{itemize}
-\item The 40th International Conference on Machine Learning (ICML 2023) \\ \phantom{.} \hfill Hawaii Convention Center, HI, Jul 2023
+%\item The 40th International Conference on Machine Learning (ICML 2023) \\ \phantom{.} \hfill Hawaii Convention Center, HI, Jul 2023
+\item The 40th International Conference on Machine Learning (ICML 2023) @ Honolulu, HI \hfill Jul 2023
 \end{itemize}
 
 \textsl{Three-way online correlated selection}
 \vspace{\killinitspace}
 \begin{itemize}
-\item Theory Tea \hfill Cornell University, NY, Dec 2022
-\item The 32nd International Symposium on Algorithms and Computation (ISAAC 2021) \hfill Virtual, Dec 2021
-\item The 14th Annual Meeting of the Asian Association for Algorithms and Computation (AAAC 2021) \\ \phantom{.} \hfill Virtual, Oct 2021
+%\item Theory Tea \hfill Cornell University, NY, Dec 2022
+\item Theory Tea @ Cornell University \hfill Dec 2022
+%\item The 32nd International Symposium on Algorithms and Computation (ISAAC 2021) \hfill Virtual, Dec 2021
+\item The 32nd International Symposium on Algorithms and Computation (ISAAC 2021) @  Fukuoka, Japan (Virtual) \hfill Dec~2021
+%\item The 14th Annual Meeting of the Asian Association for Algorithms and Computation (AAAC 2021) \\ \phantom{.} \hfill Virtual, Oct 2021
+\item The 14th Annual Meeting of the Asian Association for Algorithms and Computation (AAAC 2021) @ Tainan, Taiwan (Virtual) \hfill Oct 2021
 \end{itemize}
 
 \textsl{Parity-constrained facility location}
 \vspace{\killinitspace}
 \begin{itemize}
-\item The 31st International Symposium on Algorithms and Computation (ISAAC 2021) \hfill Virutal, Dec 2020
-\item The 13th Annual Meeting of the Asian Association for Algorithms and Computation (AAAC 2021) \\ \phantom{.} \hfill Virtual, Sept 2020
+%\item The 31st International Symposium on Algorithms and Computation (ISAAC 2021) \hfill Virutal, Dec 2020
+\item The 31st International Symposium on Algorithms and Computation (ISAAC 2021) @ Hong Kong, China (Virutal) \hfill Dec 2020
+%\item The 13th Annual Meeting of the Asian Association for Algorithms and Computation (AAAC 2021) \\ \phantom{.} \hfill Virtual, Sept 2020
+\item The 13th Annual Meeting of the Asian Association for Algorithms and Computation (AAAC 2021) @ Nara, Japan (Virtual) \hfill Sept 2020
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	Research
+%	Research experience
 %----------------------------------------------------------------------------------------
 \section{Research Experience}
 \textsl{Visiting research intern}, Cornell University \hfill Sep 2022 -- Dec 2022
@@ -119,7 +148,7 @@ Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximat
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
-%	Teaching
+%	Teaching experience
 %----------------------------------------------------------------------------------------
 \section{Teaching Experience}
 \textsl{Teaching assistant}, Yonsei University
@@ -128,8 +157,7 @@ Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximat
 \item CSI3108 (Algorithm analysis) \hfill Fall 2018 -- 2021, 2023
 \item AIC2130 (Computer algorithms for AI applications) \hfill Fall 2023
 \item GEK6205 (Design and analysis of optimization algorithms) \hfill Fall 2023
-\item CCO2103 (Data structures) \hfill Spring 2023
-\item CSI2103 (Data structures) \hfill Spring 2018-2021
+\item CSI2103/CCO2103 (Data structures) \hfill Spring 2018 -- 2021, 2023
 \end{itemize}
 
 \textsl{Undergraduate tutor} of the voluntary tutoring program, Yonsei University
@@ -141,9 +169,16 @@ Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximat
 
 
 %----------------------------------------------------------------------------------------
-%	Work
+%	Misc experience
 %----------------------------------------------------------------------------------------
-\section{Work Experience}
+\section{Miscellaneous Experience}
+\textsl{Organizer} of Yonsei CS theory student group, Yonsei University \hfill Jan 2023 -- present
+\vspace{\killinitspace}
+\begin{itemize}
+\item Organize seminar talks on various topics including mechanism design and quantum computing
+\end{itemize}
+
+
 \textsl{Web programmer}, Republic of Korea Air Force \hfill Nov 2013 -- Aug 2015
 \vspace{\killinitspace}
 \begin{itemize}
@@ -152,7 +187,7 @@ Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximat
 
 
 %----------------------------------------------------------------------------------------
-%	Reference
+%	References
 %----------------------------------------------------------------------------------------
 \section{References}
 \parbox{0.5\textwidth}{
