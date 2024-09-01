@@ -26,8 +26,8 @@
 %----------------------------------------------------------------------------------------
 {\Huge Yongho Shin}
 \begin{itemize}[itemsep=-3pt, leftmargin=2.5pt, label=]
-\item Ph.D.~candidate
-\item Department of Computer Science, Yonsei University
+\item Ph.D.
+%\item Department of Computer Science, Yonsei University
 \item 50 Yonsei-ro, Seodaemun-gu
 \item Seoul 03722, South Korea
 \item Email: \texttt{yshin@yonsei.ac.kr}
@@ -44,7 +44,7 @@ Online/approximation algorithms for combinatorial optimization problems
 %	Education
 %----------------------------------------------------------------------------------------
 \section{Education}
-\textbf{Ph.D.~in Computer Science, Yonsei University, South Korea} \hfill Mar.~2018 -- Aug.~2024 (expected)
+\textbf{Ph.D.~in Computer Science, Yonsei University, South Korea} \hfill Mar.~2018 -- Aug.~2024
 \vspace{\killinitspace}
 \begin{itemize}
 \item Dissertation topic: Relaxing hard requirements of online optimization via learning augmentation and limited revocability
@@ -62,50 +62,47 @@ Online/approximation algorithms for combinatorial optimization problems
 %----------------------------------------------------------------------------------------
 \section{Research Papers}
 \textbf{Yongho Shin}, Changyeol Lee, and Hyung-Chan An. On optimal consistency-robustness trade-off for learning-augmented multi-option ski rental. \emph{arXiv preprint arXiv:2312.02547}, 2023.
-\vspace{\killinitspace}
-\begin{itemize}
-\item This paper bridges the gap for both deterministic and randomized learning-augmented algorithms for the multi-option ski rental problem. For deterministic algorithms, we present a best-possible algorithm that matches the known lower bound; for randomized algorithms, we show the first nontrivial lower bound on the consistency-robustness trade-off, and also present an improved randomized algorithm. Our algorithm matches our lower bound on robustness within a factor of e/2 when the consistency is at most 1.086.
-\end{itemize}
+%\vspace{\killinitspace}
+%\begin{itemize}
+%\item This paper bridges the gap for both deterministic and randomized learning-augmented algorithms for the multi-option ski rental problem. For deterministic algorithms, we present a best-possible algorithm that matches the known lower bound; for randomized algorithms, we show the first nontrivial lower bound on the consistency-robustness trade-off, and also present an improved randomized algorithm. Our algorithm matches our lower bound on robustness within a factor of e/2 when the consistency is at most 1.086.
+%\end{itemize}
 
 \textbf{Yongho Shin}, Changyeol Lee, Gukryeol Lee, and Hyung-Chan An. Improved learning-augmented algorithms for the multi-option ski rental problem via best-possible competitive analysis. In \emph{Proceedings of the 40th International Conference on Machine Learning (ICML 2023)}, PMLR 202:31539-31561, 2023.
-\vspace{\killinitspace}
-\begin{itemize}
-\item Ski rental problems are one of the canonical problems in the field of online optimization. However, only deterministic algorithms were previously known for multi-option ski rental, with or without learning augmentation. We present the first randomized learning-augmented algorithm for this problem, surpassing previous performance guarantees given by deterministic algorithms. Our learning-augmented algorithm is based on a new, provably best-possible randomized competitive algorithm for the problem. Our results are further complemented by lower bounds for deterministic and randomized algorithms.
-\end{itemize}
+%\vspace{\killinitspace}
+%\begin{itemize}
+%\item Ski rental problems are one of the canonical problems in the field of online optimization. However, only deterministic algorithms were previously known for multi-option ski rental, with or without learning augmentation. We present the first randomized learning-augmented algorithm for this problem, surpassing previous performance guarantees given by deterministic algorithms. Our learning-augmented algorithm is based on a new, provably best-possible randomized competitive algorithm for the problem. Our results are further complemented by lower bounds for deterministic and randomized algorithms.
+%\end{itemize}
 
 Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximation algorithms for parity-constrained facility location and $k$-center. \emph{Algorithmica 85}, 1883–1911, 2023.
-\vspace{\killinitspace}
-\begin{itemize}
-\item Preliminary version: Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximation algorithms for the parity-constrained facility location problem. In \emph{Proceedings of the 31st International Symposium on Algorithms and Computation (ISAAC 2020)}, 21:1-21:17, 2020.
-\item \emph{Facility location} is a prominent optimization problem in combinatorial optimization, and has been investigated under various settings. However, little is known on how the problem behaves in conjunction with parity constraints. This shortfall of understanding was rather disturbing when we consider the central role of \emph{parity} in the field of combinatorics. In this paper, we present the first constant-factor approximation algorithm for the facility location with parity constraints.
-\end{itemize}
+%\vspace{\killinitspace}
+%\begin{itemize}
+%\item \emph{Facility location} is a prominent optimization problem in combinatorial optimization, and has been investigated under various settings. However, little is known on how the problem behaves in conjunction with parity constraints. This shortfall of understanding was rather disturbing when we consider the central role of \emph{parity} in the field of combinatorics. In this paper, we present the first constant-factor approximation algorithm for the facility location with parity constraints.
+%\end{itemize}
 
 \textbf{Yongho Shin} and Hyung-Chan An. Making three out of two: Three-way online correlated selection. In \emph{Proceedings of the 32nd International Symposium on Algorithms and Computation (ISAAC 2021)}, 49:1-49:17, 2021.
-\vspace{\killinitspace}
-\begin{itemize}
-\item \emph{Two-way online correlated selection (two-way OCS)} is an online algorithm that, at each timestep, takes a pair of elements from the ground set and irrevocably chooses one of the two elements, while ensuring negative correlation in the algorithm's choices. Fahrbach, Huang, Tao, and Zadimoghaddam initially invented OCS to tackle the edge-weighted online bipartite matching, and posed an open question: Can we obtain a nontrivial \emph{$n$-way OCS} for $n>2$? In this paper, we affirmatively answer this open question by presenting a \emph{three-way OCS}. We also show that our OCS yields a 0.5093-competitive algorithm for the edge-weighted online matching, demonstrating its usefulness.
-%\item \emph{Two-way online correlated selection (two-way OCS)} is an online algorithm that, at each timestep, takes a pair of elements from the ground set and irrevocably chooses one of the two elements, while ensuring negative correlation in the algorithm's choices. Whilst OCS was initially invented by Fahrbach, Huang, Tao, and Zadimoghaddam to tackle the edge-weighted online bipartite matching problem, it is an interesting technique on its own due to its capability of introducing a powerful algorithmic tool, namely negative correlation, to online algorithms. As such, Fahrbach et al.~posed two tantalizing open questions in their paper, one of which was the following: Can we obtain a nontrivial \emph{$n$-way OCS} for $n>2$, in which the algorithm can be given $n>2$ elements to choose from at each timestep? In this paper, we affirmatively answer this open question by presenting a \emph{three-way OCS}. We also present our OCS yields a 0.5093-competitive algorithm for the edge-weighted online matching, demonstrating its usefulness.
-\end{itemize}
+%\vspace{\killinitspace}
+%\begin{itemize}
+%\item \emph{Two-way online correlated selection (two-way OCS)} is an online algorithm that, at each timestep, takes a pair of elements from the ground set and irrevocably chooses one of the two elements, while ensuring negative correlation in the algorithm's choices. Fahrbach, Huang, Tao, and Zadimoghaddam initially invented OCS to tackle the edge-weighted online bipartite matching, and posed an open question: Can we obtain a nontrivial \emph{$n$-way OCS} for $n>2$? In this paper, we affirmatively answer this open question by presenting a \emph{three-way OCS}. We also show that our OCS yields a 0.5093-competitive algorithm for the edge-weighted online matching, demonstrating its usefulness.
+%\end{itemize}
+
+Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximation algorithms for the parity-constrained facility location problem. In \emph{Proceedings of the 31st International Symposium on Algorithms and Computation (ISAAC 2020)}, 21:1-21:17, 2020.
 
 \textbf{Yongho Shin}, Kangsan Kim, Seungmin Lee, and Hyung-Chan An. Online graph matching problem with a worst-case reassignment budget. \emph{arXiv preprint arXiv:2003.05175}, 2020.
-\vspace{\killinitspace}
-\begin{itemize}
-\item We propose to consider how requiring a \emph{worst-case} hard budget on the number of reassignments affects the algorithms' performances under various models of online graph matching. Through a simple algorithm exploiting a shortest augmenting path of length within the given budget, we demonstrate that even a small hard budget can yield significant performance advantage, compared to those algorithms that do not perform reassignments. Moreover, we further show that this algorithm is a best-possible deterministic algorithm for all those models.
-%\item We consider the online bipartite matching problem where reassignments are allowed. Bernstein, Holm, and Rotenberg showed that an online algorithm can maintain a matching of maximum cardinality by performing \emph{amortized} $O(\log^2 n)$ reassignments per arrival. We propose to consider the general question of \emph{how requiring a \emph{non-amortized} hard budget on the number of reassignments affects the algorithms' performances} under various models. Through a simple algorithm exploiting a shortest augmenting path of length within the given budget, we demonstrate that even a small hard budget can yield significant performance advantage, compared to those algorithms that do not perform reassignments. Moreover, we further show that this algorithm is a best-possible deterministic algorithm for all those models.
-\end{itemize}
+%\vspace{\killinitspace}
+%\begin{itemize}
+%\item We propose to consider how requiring a \emph{worst-case} hard budget on the number of reassignments affects the algorithms' performances under various models of online graph matching. Through a simple algorithm exploiting a shortest augmenting path of length within the given budget, we demonstrate that even a small hard budget can yield significant performance advantage, compared to those algorithms that do not perform reassignments. Moreover, we further show that this algorithm is a best-possible deterministic algorithm for all those models.
+%\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	Awards
 %----------------------------------------------------------------------------------------
-
-%\section{AWARDS}
 \section{Awards}
 \textsl{High honors at graduation}, Yonsei University \hfill Feb.~2018
 
 %----------------------------------------------------------------------------------------
 %	Presentations
 %----------------------------------------------------------------------------------------
-\section{Presentations}
+\section{Talks and Presentations}
 \textsl{Improved learning-augmented algorithms for the multi-option ski rental problem via best-possible competitive analysis}
 \vspace{\killinitspace}
 \begin{itemize}
@@ -128,7 +125,8 @@ Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximat
 \item Presentation at ISAAC 2020, Hong Kong, China (virtual) \hfill Dec.~2020
 \end{itemize}
 
-%\newpage
+
+
 %----------------------------------------------------------------------------------------
 %	Research experience
 %----------------------------------------------------------------------------------------
@@ -145,7 +143,6 @@ Kangsan Kim, \textbf{Yongho Shin}, and Hyung-Chan An. Constant-factor approximat
 \item Advisor: Hyung-Chan An
 \end{itemize}
 
-\newpage
 %----------------------------------------------------------------------------------------
 %	Teaching experience
 %----------------------------------------------------------------------------------------
